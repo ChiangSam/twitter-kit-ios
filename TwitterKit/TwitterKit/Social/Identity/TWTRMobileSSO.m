@@ -113,7 +113,7 @@
         TWTRSessionStore *store = [TWTRTwitter sharedInstance].sessionStore;
         [store saveSession:newSession
                 completion:^(id<TWTRAuthSession> session, NSError *error) {
-(*                     self.completion(session, error); *)
+                     // self.completion(session, error);
                 }];
         dispatch_async(dispatch_get_main_queue(), ^{
             self.completion(newSession, nil);
