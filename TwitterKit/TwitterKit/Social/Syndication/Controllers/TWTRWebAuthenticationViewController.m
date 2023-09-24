@@ -117,7 +117,7 @@
 - (void)embedViewController:(UIViewController *)controller
 {
     controller.view.frame = self.view.bounds;
-    controller.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    // controller.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 
     [self addChildViewController:controller];
     [self.view addSubview:controller.view];
